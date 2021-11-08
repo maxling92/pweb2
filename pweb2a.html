@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Sedap</title>
+    <style>
+        body{
+            color: #000000;
+            background-color: #F7F6F2;
+            background-image: url(img/background.png);
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+            margin: 0px;
+        }
+        .wrapper {
+            width: 960px;
+            margin: 20px auto 20px auto;
+            /* border: 2px solid #000000; */
+            background-color:  #C8C6C6 ;
+        }
+
+        nav, footer{ 
+            /* position: -webkit-stictoky; */
+            /* position: sticky; */
+            clear: both;
+            background-color: #4B6587;
+            height: 61px;
+        }
+        nav ul {
+            margin: 0px 0px;
+            padding-left: 5px;
+        }
+        nav ul li {
+            display: inline-block;
+            padding: 20px 15px 20px 15px;
+            font-size: 14pt;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #C8C6C6;
+        }
+        nav ul li:hover {
+            background-color: #F0E5CF;
+        }
+        section.courses{
+            float: left;
+            width: 659px;
+            border-right: 1px solid #eeeeee;
+            padding-right: 10px;
+        }
+        article{
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+        hgroup{
+            margin-top: 20px;
+        }
+        figure{
+            float: left;
+            width: 290px;
+            height: 220px;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid #eeeeee;
+        }
+        figcaption{
+            font-size: 90%;
+            text-align: left;
+        }
+        aside{
+            width: 230px;
+            float: left;
+            padding: 0px 0px 0px 20px;
+        }
+        aside section a{
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        aside section a:hover{
+            color: #eeeeee;
+            background-color: #4B6587;
+        }
+        a{
+            color: #4B6587;
+            text-decoration: none;
+        }
+        h1, h2, h3{
+            font-weight: normal;
+        }
+        h2{
+            font-weight: bold;
+            margin: 10px 0px 5px 0px;
+            padding: 0px;
+        }
+        h3{
+            margin: 0px 0px 10px 0px;
+        }
+        aside section h3 {
+            margin: 20px 0px 5px 0px;
+            font-weight: bold;
+        }
+        aside h2{
+            padding: 30px 0px 10px 0px;
+        }
+        footer p{
+            color: #eeeeee;            
+            font-size: 80%;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="navbar" href="">Beranda</a></li>
+                    <li><a class="navbar" href="">Tentang</a></li>
+                    <li><a class="navbar" href="#daftar-masakan">Daftar Masakan</a></li>
+                    <li><a class="navbar" href="">Katering</a></li>
+                    <li><a class="navbar" href="">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section id="daftar-masakan" class="courses">
+                <article>
+                    <figure>
+                        <img src="img/soto.jpeg" alt="soto indonesia">
+                        <figcaption>Soto Indonesia</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h2>Soto Ayam</h2>
+                        <h3>Makanan berkuah kuning</h3>
+                        <p>Soto ayam adalah makanan khas Indonesia yang berupa sejenis sup ayam dengan kuah yang berwarna kekuningan.</p>
+                    </hgroup>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/pecel.jpeg" alt="nasi pecel">
+                        <figcaption>Nasi Pecel</figcaption>
+                    </figure>
+                    <hgroup></hgroup>
+                        <h2>Nasi Pecel</h2>
+                        <h3>Makanan dengan bumbu kacang</h3>
+                        <p>Pecel adalah makanan yang menggunakan bumbu sambal kacang sebagai bahan utamanya yang dicampur dengan aneka jenis sayuran.</p>
+                    </hgroup>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/rawon.jpeg" alt="nasi rawon">
+                        <figcaption>Nasi Rawon</figcaption>
+                    </figure>
+                    <hgroup></hgroup>
+                        <h2>Nasi Rawon</h2>
+                        <h3>Makanan berkuah hitam</h3>
+                        <p>Rawon adalah masakan Indonesia berupa sup daging berkuah hitam sebagai campuran bumbu khas yang mengandung kluwek. Rawon, meskipun dikenal sebagai masakan khas Jawa Timur, dikenal pula oleh masyarakat Jawa Tengah sebelah timur.</p>
+                    </hgroup>
+                </article>                
+            </section>
+         <aside>
+            <section class="populer-artikel">
+                <h3>Masakan populer</h3>
+                <a href="">Sayur Sop</a>
+                <a href="">Sayum Asem</a>
+                <a href="">Sayur Lodeh</a>
+                <a href="">Sayur Bayam</a>
+            </section>
+            <section class="kontak-detail">
+                <h3>Temukan kami</h3>
+                <p>Warung Sedap tersebar<br>di seluruh kota di Indonesia</p>
+            </section>
+           
+        </aside>
+    
+        <footer>
+
+            <p>&copy;2021 Warung Tegal Indonesia.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
